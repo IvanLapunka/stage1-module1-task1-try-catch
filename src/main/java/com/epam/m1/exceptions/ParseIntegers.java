@@ -3,6 +3,7 @@ package com.epam.m1.exceptions;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.logging.Level;
 import java.util.logging.Logger;
 
 /**
@@ -34,8 +35,9 @@ public class ParseIntegers {
                 justWords.append(next);
             }
         }
-        logger.info("Sum is " + sum);
-        logger.info("Just words:" + justWords);
+        final int result = sum;
+        logger.info(() -> "Sum is " + result);
+        logger.log(Level.INFO, "Just words:{0}", justWords.toString());
     }
 }
 
