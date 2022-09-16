@@ -36,8 +36,10 @@ public class ParseIntegers {
             }
         }
         final int result = sum;
-        logger.info(() -> "Sum is " + result);
-        logger.log(Level.INFO, "Just words:{0}", justWords);
+//        logger.info(() -> "Sum is " + result);
+//        logger.log(Level.INFO, "Just words:{0}", justWords);
+        System.out.println("Sum is " + sum);
+        System.out.println("Just words: " + justWords);
     }
 }
 
